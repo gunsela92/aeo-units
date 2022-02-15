@@ -2,7 +2,7 @@ import {
   SET_UNITS
 } from "../actions/unitActions";
 
-const CONFIG_URL = "./units.json"
+const CONFIG_URL = "/units.json"
 
 export const fetchUnits = async () => {
   const response = await fetch(CONFIG_URL);

@@ -1,5 +1,9 @@
 .unitResults {
   margin-top: 2rem;
+
+  & > div:not(:first-child) {
+    cursor: pointer;
+  }
 }
 
 .unitResultsWrapper {

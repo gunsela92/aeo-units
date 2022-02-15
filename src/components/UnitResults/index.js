@@ -1,8 +1,10 @@
 import React from "react";
 import "./unitResults.scss";
 import PropTypes from "prop-types";
+import {useNavigate} from "react-router-dom";
 
 const UnitResults = ({ results }) => {
+  const navigate = useNavigate();
   return (
     <div className="unitResults">
       <div className="unitResultsWrapper">
@@ -20,7 +22,7 @@ const UnitResults = ({ results }) => {
         </div>
       </div>
       {results?.map(item => (
-        <div className="unitResultsWrapper" key={item?.id}>
+        <div className="unitResultsWrapper" key={item?.id} onClick={() => navigate(`/unit/${item?.id}`)} >
           <div className="unitResultsItem">
             {item?.id}
           </div>
@@ -31,12 +33,14 @@ const UnitResults = ({ results }) => {
             {item?.age}
           </div>
           <div className="unitResultsItem">
-            {item?.cost && Object.keys(item?.cost).map((key, i) => (
+            {item?.cost ? Object.keys(item?.cost).map((key, i) => (
               <span key={key}>
                 {key}: {item?.cost[key]}
                 {i !== Object.keys(item?.cost).length - 1 && <span>, </span>}
               </span>
-            ))}
+            )) : (
+              <span>-</span>
+            )}
           </div>
         </div>
       ))}

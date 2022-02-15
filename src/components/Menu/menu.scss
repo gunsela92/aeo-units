@@ -1,23 +1,73 @@
 .menuWrapper {
-  display: grid;
+  display: flex;
   position: relative;
   font-size: 2rem;
-  margin: 0 auto;
-  grid-template-columns: 55% 45%
-}
-
-.pageTitle {
-  display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  background-color: #151A25;
+  color: #fff;
 }
 
 .menuContainer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-size: 1.2rem;
 
   & a {
     margin: 0 15px;
     padding: 0;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: -1000px;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background-color: #151A25;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menuActive {
+  transition: all 0.5s ease-in-out;
+  top: 80px;
+}
+
+.menuCloseIcon {
+  width: 32px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.hamburgerIcon {
+  display: none;
+  width: 25px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menuContainer {
+    display: none;
+  }
+  .hamburgerIcon {
+    display: block;
   }
 }

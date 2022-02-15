@@ -1,11 +1,10 @@
 import React from "react";
 import "./home.scss";
+import Background from "../../assets/img/background.png";
 
 const Home = () => {
   return (
-    <div>
-      <div className="homeImage" />
-    </div>
+    <img src={Background} alt="background" className="homeImage" />
   );
 };
 

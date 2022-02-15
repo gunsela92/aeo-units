@@ -15,7 +15,7 @@ const UnitFiltering = ({unitList}) => {
 
   const handleCheckboxChange = (type) => {
     if (selectedTypes[type]) {
-      setSliderValues({...sliderValues, [type]: 0})
+      setSliderValues({...sliderValues, [type]: [0, 200]})
     }
     setSelectedTypes({...selectedTypes, [type]: !selectedTypes[type]});
   };
@@ -48,9 +48,10 @@ const UnitFiltering = ({unitList}) => {
           className="filterSlider"
           min={0}
           max={200}
+          value={sliderValues.wood}
           defaultValue={[0, 200]}
           allowCross={false}
-          onAfterChange={(e) => handleChange("wood", e)}
+          onChange={(e) => handleChange("wood", e)}
         />
         <span className="sliderValues">{sliderValues.wood[0]} - {sliderValues.wood[1]}</span>
       </div>
@@ -64,8 +65,9 @@ const UnitFiltering = ({unitList}) => {
           min={0}
           max={200}
           defaultValue={[0, 200]}
+          value={sliderValues.food}
           allowCross={false}
-          onAfterChange={(e) => handleChange("food", e)}
+          onChange={(e) => handleChange("food", e)}
         />
         <span className="sliderValues">{sliderValues.food[0]} - {sliderValues.food[1]}</span>
       </div>
@@ -79,8 +81,9 @@ const UnitFiltering = ({unitList}) => {
           min={0}
           max={200}
           defaultValue={[0, 200]}
+          value={sliderValues.gold}
           allowCross={false}
-          onAfterChange={(e) => handleChange("gold", e)}
+          onChange={(e) => handleChange("gold", e)}
         />
         <span className="sliderValues">{sliderValues.gold[0]} - {sliderValues.gold[1]}</span>
       </div>

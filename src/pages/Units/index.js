@@ -29,12 +29,12 @@ const UnitsPage = () => {
   }, [searchValue, unitList]);
 
   return (
-    <div>
+    <>
       {unitList?.length > 0 && (
         <Tabs units={unitList} onSelect={(val) => setSearchValue(val)} selectedTab={searchValue}/>
       )}
       <UnitFiltering unitList={filteredUnits}/>
-    </div>
+    </>
   );
 };
 

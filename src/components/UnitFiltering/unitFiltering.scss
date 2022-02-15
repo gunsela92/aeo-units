@@ -12,6 +12,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 10px;
 
   & > span {
     min-width: 50px;
@@ -24,7 +27,7 @@
 }
 
 .filterSlider {
-  margin-left: 2rem;
+  margin-left: 1rem;
 
   & > .rc-slider-handle {
     border: 2px solid black;
