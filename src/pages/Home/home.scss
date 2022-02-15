@@ -1,0 +1,21 @@
+.homeTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 200px);
+  margin: 10px auto;
+}
+
+.homeImage {
+  background-image: url("../../../src/assets/img/background.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 550px;
+  margin-top: 50px;
+}

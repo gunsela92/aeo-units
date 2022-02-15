@@ -1,0 +1,18 @@
+.tabsWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  font-size: 14px;
+}
+
+.tabsItem {
+  padding: 5px;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selectedTab {
+  background: #c4c4c4;
+}

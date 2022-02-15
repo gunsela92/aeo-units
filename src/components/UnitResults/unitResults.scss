@@ -1,0 +1,13 @@
+.unitResults {
+  margin-top: 2rem;
+}
+
+.unitResultsWrapper {
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr;
+}
+
+.unitResultsItem {
+  border: 1px solid #000;
+  text-align: center;
+}

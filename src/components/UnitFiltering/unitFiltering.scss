@@ -1,0 +1,45 @@
+.sliderWrapper {
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  .sliderWrapper {
+    width: 100%;
+  }
+}
+
+.sliderItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  & > span {
+    min-width: 50px;
+    white-space: nowrap;
+  }
+}
+
+.typeSelector {
+  margin-right: 0.75rem;
+}
+
+.filterSlider {
+  margin-left: 2rem;
+
+  & > .rc-slider-handle {
+    border: 2px solid black;
+  }
+
+  & > .rc-slider-track {
+    background: none;
+  }
+}
+
+.sliderValues {
+  margin-left: 2rem;
+}
+
+.costsTitle {
+  margin: 3rem 0;
+  font-size: 1.5rem;
+}
