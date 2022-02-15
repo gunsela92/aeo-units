@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {setUnits} from "../../redux/actions/unitActions";
 import Tabs from "../../components/Tabs";
 import UnitFiltering from "../../components/UnitFiltering";
+import PageTitles from "../../components/PageTitles";
 
 const UnitsPage = () => {
   const dispatch = useDispatch();
@@ -30,6 +31,7 @@ const UnitsPage = () => {
 
   return (
     <>
+      <PageTitles title="Unit Results"/>
       {unitList?.length > 0 && (
         <Tabs units={unitList} onSelect={(val) => setSearchValue(val)} selectedTab={searchValue}/>
       )}
