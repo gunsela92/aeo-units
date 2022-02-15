@@ -31,7 +31,7 @@ const UnitsPage = () => {
 
   return (
     <>
-      <PageTitles title="Unit Results"/>
+      <PageTitles title="Units Page"/>
       {unitList?.length > 0 && (
         <Tabs units={unitList} onSelect={(val) => setSearchValue(val)} selectedTab={searchValue}/>
       )}
