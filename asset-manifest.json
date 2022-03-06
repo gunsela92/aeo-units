@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/aeo-units/static/css/main.ea84069f.css",
+    "main.js": "/aeo-units/static/js/main.644b3032.js",
+    "static/js/787.627f522b.chunk.js": "/aeo-units/static/js/787.627f522b.chunk.js",
+    "static/media/background.png": "/aeo-units/static/media/background.bcbfadef409ce9bd66ad.png",
+    "static/media/logo.png": "/aeo-units/static/media/logo.b4c46233c1c9ce3e347a.png",
+    "static/media/close.svg": "/aeo-units/static/media/close.ed8b3773ca724941b3c7101198ebea41.svg",
+    "static/media/menu.svg": "/aeo-units/static/media/menu.bb94e5d006a4cb05ddbc9c3c3cd64cee.svg",
+    "index.html": "/aeo-units/index.html",
+    "main.ea84069f.css.map": "/aeo-units/static/css/main.ea84069f.css.map",
+    "main.644b3032.js.map": "/aeo-units/static/js/main.644b3032.js.map",
+    "787.627f522b.chunk.js.map": "/aeo-units/static/js/787.627f522b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea84069f.css",
+    "static/js/main.644b3032.js"
+  ]
+}
